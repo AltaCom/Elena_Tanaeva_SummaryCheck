@@ -11,7 +11,7 @@ string[] newArray = new string[count];
 count = newArray.Length;
 for (int i = 0; i < count; i++)
 {
-    Console.Write($"Input airport {i}: ");
+    Console.Write($"Input airport {i+1}: ");
     newArray[i] = Console.ReadLine();
     Console.WriteLine();
 }
@@ -30,12 +30,11 @@ for (int i = 0; i < array.Length; i++)
 string[] SecondStringArray(string[] array)
 {
 string[] newArray = new string[array.Length];
-
-for (int i = 0; i < array.Length; i++)
-{
-if (array[i].Length <= 3) 
-    newArray[i] = array[i];
-}
+for (int i = 0; i < newArray.Length; i++)
+    {
+    if (array[i].Length <= 3) 
+    newArray[i] = array[i];    
+    }        
 return newArray;
 }
 
